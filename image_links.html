@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links Website</title>
+
+
+    <style>
+        img {
+           transition: 0.3s ease;
+           overflow: hidden;
+           box-shadow: 0.3s;
+        }
+
+        
+        ul li a{
+            text-decoration: none;
+        }
+
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            text-align: center;
+            
+            
+        }
+
+        img:hover{
+        filter:brightness(1.2);
+        background-color: blue;
+       /*-- border: 5px solid black;*/
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0 0.5);
+        transform: scale(1.05);
+        cursor: pointer ;
+        }
+
+        ul li {
+            list-style: none;
+            line-height: 50px;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--heeader navbar-->
+    <header>
+        <h1>Welcome to Image Links Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!--home 0f technology-->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! Check out our amazing technology image below.</p>
+        <a href="https://www.google.com/search?client=firefox-b-d&q=image+of+technology+site" target="_blank">
+            <img src="tech.jpg" alt="example of tech" style="max-width: 100%;" width="200"></a>
+    </section>
+
+
+    <!--gallery of nature-->
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="https://www.google.com/search?sca_esv=5edede5fd926eb91&sxsrf=ACQVn0_63huUiAWUc2PeqEJfDMoa6g6N6A:1709564343908&q=site+of+water+as+a+nature&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjavMG779qEAxXbX0EAHSwIA-QQ0pQJegQIDRAB&biw=1366&bih=607&dpr=1" target="_blank">
+                <img src="./water1.jpg" alt="water as a nature" width="200" style="max-width: 100%;"></a>
+            <a href="https://www.google.com/search?q=plant+nature&tbm=isch&ved=2ahUKEwjzz8Sm8NqEAxWeT6QEHQdVC6gQ2-cCegQIABAA&oq=plant+nature&gs_lp=EgNpbWciDHBsYW50IG5hdHVyZTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI-XpQngdYiHVwBXgAkAECmAGJBKAB4EyqAQwwLjMuMzMuMy4wLjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ6gCCsICBBAjGCfCAgoQABiABBiKBRhDwgIIEAAYgAQYsQPCAg0QABiABBiKBRhDGLEDwgIHEAAYgAQYGMICCRAAGIAEGBgYCsICBxAjGOoCGCeIBgE&sclient=img&ei=mOLlZfOjFZ6fkdUPh6qtwAo&bih=607&biw=1366" target="_blank">
+                <img src="./plant 1.jpg" alt="plant as a nature" width="200" height="132" style="max-width: 100%;"></a>
+            <a href="https://www.google.com/search?q=image+of+hills&&tbm=isch&ved=2ahUKEwiwsor-8dqEAxWVdKQEHVi6BXYQ2-cCegQIABAA&oq=image+of+hills&gs_lp=EgNpbWciDmltYWdlIG9mIGhpbGxzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYCBgeMgYQABgIGB5InzRQxApY8SxwAHgAkAEBmAHdA6ABrRmqAQkwLjEuOC4yLjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ8ICChAAGIAEGIoFGEPCAgQQIxgniAYB&sclient=img&ei=XOTlZbCUF5XpkdUP2PSWsAc&bih=607&biw=1366" target="_blank">
+                <img src="hills.jpg" alt="hills as nature" width="200" height="132" style="max-width: 100%;"></a>
+        </div>
+    </section>
+
+
+    <!--food menu-->
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://www.google.com/search?q=yam+nigerian+food&tbm=isch&hl=en&sa=X&ved=2ahUKEwj10ZWv-NqEAxVFVqQEHRPXCW0QrNwCKAB6BQgBEIIB&biw=1349&bih=607" target="_blank">Yam as an Example Carbohydrate food</a></li>
+            <li><a href="https://www.google.com/search?q=example+of+protein+food+in+nigeria&tbm=isch&ved=2ahUKEwjUtL6S-dqEAxXOkScCHcJ5BZMQ2-cCegQIABAA&oq=example+of+protein+food+in+nigeria&gs_lp=EgNpbWciImV4YW1wbGUgb2YgcHJvdGVpbiBmb29kIGluIG5pZ2VyaWEyBxAAGIAEGBhIxCxQ8gpYjyhwAHgAkAEAmAHiAaABxxOqAQYwLjIuMTC4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ8ICChAAGIAEGIoFGEPCAgUQABiABMICBhAAGAcYHsICBhAAGAgYHsICBBAAGB6IBgE&sclient=img&ei=3uvlZdTNDc6jnsEPwvOVmAk&bih=607&biw=1349&hl=en" target="_blank">Protein Food</a></li>
+            <li><a href="https://www.google.com/search?q=sites+showing+fruits+and+type&tbm=isch&hl=en&chips=q:sites+showing+fruits+and+type,online_chips:different+kinds+of:9mRqbpMXdQE%3D&bih=607&biw=1349&sa=X&ved=2ahUKEwjdkczz_NqEAxUrUqQEHVWVCWcQ4lYoAXoECAEQMw" target="_blank"  alt="examples of fruits as a Vitamin Food "> Fruits as Vitamin food</a></li>
+        </ul>
+    </section>
+
+
+</body>
+</html>
